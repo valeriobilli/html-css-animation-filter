@@ -16,3 +16,16 @@
 .ex-2-square:active {
     width: 100%;
 }
+
+/* ESERCIZIO 3 */
+
+.ex-3-square {
+    transition: border-radius: 50%;
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
