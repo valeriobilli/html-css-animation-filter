@@ -83,5 +83,26 @@
     filter: sepia(50%);
     border-radius: 20px;
     scale: 1.5;
+    filter: hue-rotate()
  }
+
+ /* ESERCIZIO 10 */
+
+ .ex-10-icon {
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+ }
+
+ @keyframes rotation {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+ }
+
  
