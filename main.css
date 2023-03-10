@@ -60,6 +60,7 @@
 }
 
 /* ESERCIZIO 8 */
+
  .ex-8-img {
     transition: 1.5s;
  }
@@ -69,3 +70,18 @@
     filter: sepia(50%);
     border-radius: 20px;
  }
+
+ /* ESERCIZIO 9 */
+
+.ex-9-img {
+    transition: 2s;
+}
+
+ .ex-9-img:hover {
+    transition: 2s;
+    filter: grayscale(100%);
+    filter: sepia(50%);
+    border-radius: 20px;
+    scale: 1.5;
+ }
+ 
