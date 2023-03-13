@@ -8,7 +8,7 @@
 /* ESERCIZIO 2 */
 
 .ex-2-square {
-    transition: width: 100%;
+    transition: width 100%;
     transition: 2s;
     transition-timing-function: ease;
 } 
@@ -20,8 +20,8 @@
 /* ESERCIZIO 3 */
 
 .ex-3-square {
-    transition: border-radius: 50%;
-    transition: 0.5s;
+    transition: border-radius 50%;
+    transition: 1s;
     transition-timing-function: ease;
 }
 
@@ -66,8 +66,8 @@
  }
 
  .ex-8-img:hover {
-    filter: grayscale(100%);
-    filter: sepia(50%);
+    filter: grayscale(50%);
+    filter: sepia(60%);
     border-radius: 20px;
  }
 
@@ -78,12 +78,10 @@
 }
 
  .ex-9-img:hover {
-    transition: 2s;
     filter: grayscale(100%);
     filter: sepia(50%);
     border-radius: 20px;
     scale: 1.5;
-    filter: hue-rotate()
  }
 
  /* ESERCIZIO 10 */
@@ -129,4 +127,94 @@
      }
  }
 
- 
+/* ESERCIZIO 12 */
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: moveTopWhite 2s linear;
+}
+@keyframes moveTopWhite {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: moveBottomWhite 2s linear;
+}
+@keyframes moveBottomWhite {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+/* ESERCIZIO 13 */
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: moveTopWhiteCompletely 2s linear;
+}
+@keyframes moveTopWhiteCompletely {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: moveBottomWhiteCompletely 2s linear;
+}
+@keyframes moveBottomWhiteCompletely {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
